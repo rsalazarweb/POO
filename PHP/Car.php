@@ -3,7 +3,13 @@
 class Car
 {
     protected $id;
-    protected $license;
-    protected $driver;
-    protected $passenger;
+    public $license;
+    public $driver;
+    public $passenger;
+
+    public function getDataCar()
+    {
+        $car = "License: $this->license, Driver: $this->driver, Passenger: $this->passenger";
+        return $car;
+    }
 }
