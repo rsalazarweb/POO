@@ -1,18 +1,15 @@
 <?php 
 class Account
 {
-    protected $id;
-    protected $name;
-    protected $document;
-    protected $email;
-    protected $password;
+    Private $id;
+    public $name;
+    public $document;
+    public $email;
+    public $password;
 
-    public function __construct($id, $name, $document, $email, $password)
+    public function __construct($name, $document)
     {
-        $this->id = $id;
         $this->name = $name;
         $this->document = $document;
-        $this->email = $email;
-        $this->password = $password;
     }
 }

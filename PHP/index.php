@@ -1,11 +1,10 @@
 <?php 
-
+require_once 'Account.php';
 require_once 'Car.php';
 
-$car = new Car();
+$account = new Account("Rodrigo Salazar", "INE1234");
 
-$car->license = "MXN8965";
-$car->driver = "Rodrigo Salazar";
-$car->passenger = 4;
+$car = new Car("MXA3456", $account);
+
 
 echo $car->getDataCar();
