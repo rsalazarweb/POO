@@ -5,17 +5,16 @@ class Main
     public static void main(String[] args) {
         System.out.println("Hola Mundo");
 
-        Car car = new Car();
+        Account account = new Account("Rodrigo Salazar", "rod123");
 
-        car.license = "MXA1549";
-        car.driver = "Rodrigo Salazar";
+        Car car = new Car("MXA1549", account);
+
         car.passenger = 4;
         car.printDataCar();
 
-        Car car2 = new Car();
+        Account account2 = new Account("Sandra Elisa", "snd123");
 
-        car2.license = "MXA1549";
-        car2.driver = "Rodrigo Salazar";
+        Car car2 = new Car("MXA6589", account2);
         car2.passenger = 4;
         car2.printDataCar();
         
