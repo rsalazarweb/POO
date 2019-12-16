@@ -1,4 +1,5 @@
 <?php 
+require_once 'Account.php';
 
 class Car
 {
@@ -15,7 +16,7 @@ class Car
 
     public function getDataCar()
     {
-        $car = "License: $this->license, Driver: $this->driver, Passenger: $this->passenger";
+        $car = "License: $this->license, Driver: ". $this->driver->name . ", Passenger: $this->passenger";
         return $car;
     }
 }
