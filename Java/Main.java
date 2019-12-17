@@ -7,16 +7,15 @@ class Main
 
         Account account = new Account("Rodrigo Salazar", "rod123");
 
-        Car car = new Car("MXA1549", account);
+        UberX uberx = new UberX("MXA1549", account, "Mazda", "3");
 
-        car.passenger = 4;
-        car.printDataCar();
+        uberx.setPassenger(4); 
+        uberx.printDataCar();
 
-        Account account2 = new Account("Sandra Elisa", "snd123");
-
-        Car car2 = new Car("MXA6589", account2);
-        car2.passenger = 4;
-        car2.printDataCar();
+        // Account account2 = new Account("Sandra Elisa", "snd123");
+        // Car car2 = new Car("MXA6589", account2);
+        // car2.passenger = 4;
+        // car2.printDataCar();
         
     }
 }
